@@ -35,6 +35,7 @@ KANGING_STR = [
     "Curry Sticker ahh.....",
     "Curry dolo boss",
     "Swiper jangan mencurry",
+    "Aku curry dulu kakak",
 ]
 
 
@@ -243,8 +244,8 @@ async def kang(args):
                 # Ensure user doesn't get spamming notifications
                 await bot.send_read_acknowledge(conv.chat_id)
 
-        await args.edit(f"Curry Success!\
-            \n[Klik Disini!](t.me/addstickers/{packname})",
+        await args.edit(f"Curry Success Sayang:*!\
+            \n[Klik Disini Sayang Hasilnya!](t.me/addstickers/{packname})",
                         parse_mode='md')
 
 
@@ -348,10 +349,10 @@ async def sticker_to_png(sticker):
 
 CMD_HELP.update({
     "stickers":
-    ">`.curry [emoji('s)]?`"
+    ">`.kang [emoji('s)]?`"
     "\nUsage: Reply .kang to a sticker or an image to kang it to your userbot pack "
     "\nor specify the emoji you want to."
-    "\n\n>`.curry (emoji['s]]?` [number]?"
+    "\n\n>`.kang (emoji['s]]?` [number]?"
     "\nUsage: Kang's the sticker/image to the specified pack but uses 🤔 as emoji "
     "or choose the emoji you want to."
     "\n\n>`.stkrinfo`"
